@@ -37,9 +37,6 @@ body{
     min-height: 100vh;
 }
 
-main{
-}
-
 .card{
     width: calc(var(--width) * 3);
 
@@ -93,12 +90,12 @@ main{
     text-transform: uppercase;
 }
 
-.card__stat h4{
+.stat__title{
     color: var(--white);
     font-family: 'Inter',sans-serif;
     font-weight: 700
 }
-.card__stat p{
+.stat__info{
     font-family: 'Lexend Deca',sans-serif;
     color: var(--more-slightly-white);
     font-size: .7rem;
