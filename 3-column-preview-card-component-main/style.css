@@ -23,7 +23,10 @@ html{
 }
 
 body{
-    margin-block: 50px;
+    background-color: var(--light-gray);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 img{
@@ -33,7 +36,7 @@ img{
 
 .card{
     width: 360px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     border-radius: 8px;
     overflow: hidden;
 }
