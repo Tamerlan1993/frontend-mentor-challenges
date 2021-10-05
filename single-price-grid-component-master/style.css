@@ -62,12 +62,12 @@ section {
     font-size: 1.2rem;
 }
 
-.top .title {
+.top h1 {
     color: var(--cyan);
     font-size: 1.5rem;
 }
 
-.top .subtitle {
+.top .title {
     color: var(--bright-yellow);
     font-size: 1.1rem;
     margin-block: 30px 15px;
