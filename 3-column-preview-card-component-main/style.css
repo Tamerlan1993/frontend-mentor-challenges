@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);/*paragraphs*/
+    --light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+
+    --big-shoulders: 'Big Shoulders Display', cursive;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    margin-block: 50px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.card{
+    width: 360px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card__item{
+    padding: 40px;
+}
+
+.card__item--sedan{
+    background-color: var(--bright-orange);
+}
+
+.card__item--suv{
+    background-color: var(--dark-cyan);
+}
+
+.card__item--luxury{
+    background-color: var(--very-dark-cyan);
+}
+
+.item__title{
+    color: var(--light-gray);
+    font-family: var(--big-shoulders);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-block:35px;
+}
+
+.item__info{
+    color:var(--transparent-white);
+    font-family: var(--lexend-deca);
+    font-size: .75rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    all:unset;
+    background-color: var(--light-gray);
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: var(--lexend-deca);
+}
+
+.btn--sedan{
+    color: var(--bright-orange);
+}
+
+.btn--suv{
+    color: var(--dark-cyan);
+}
+
+.btn--luxury{
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 768px) {
+    .card{
+        display: flex;
+        width: 768px;
+    }
+
+    .card__item{
+        flex:1;
+    }
+    .item__info{
+        margin-bottom: 4.5rem;
+    }
+}
