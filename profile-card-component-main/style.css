@@ -19,22 +19,40 @@ html {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-main {
-    display: flex;
-    place-items: center;
-    width: 100%;
-    height: 100vh;
-    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
-    background-repeat: no-repeat;
-    background-position: -200% -100%, 300% 200%;
+body {
+    height: 100%;
     background-color: var(--dark-cyan);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.top_bg,
+.bottom_bg {
+    position: fixed;
+    z-index: -1;
+}
+
+.top_bg {
+    right: 50%;
+    bottom: 50%;
+}
+
+.bottom_bg {
+    top: 50%;
+    left: 50%;
+}
+
 .card {
-    width: 360px;
-    margin: 0px auto;
-    border: 1px solid;
-    border-radius: 16px;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 15px 25px 0 rgb(45 50 72 / 20%);
+    border: none;
+    border-radius: 1rem;
     background-color: #fff;
     overflow: hidden;
     text-align: center;
@@ -47,34 +65,43 @@ main {
     background-size: cover;
 }
 
-img {
+.profile__image {
     border-radius: 50%;
     display: block;
-    margin: -50px auto 20px;
+    margin: -3rem auto 1rem;
     border: 4px solid white;
 }
 
+.person {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
 .name {
+    font-size: 1.8rem;
     font-weight: 700;
-    font-size: 1.2rem;
 }
 
 .age {
     color: var(--dark-grayish-blue);
     font-weight: 400;
+    font-size: 1.4rem;
 }
 
 .city {
-    font-size: .8rem;
-    font-weight: 700;
+    font-size: 1rem;
     color: var(--dark-grayish-blue);
 }
 
 .footer {
     display: flex;
-    border-top: 1px solid var(--dark-gray);
-    padding: 20px 40px;
+    border-top: 1px solid rgb(238, 235, 235);
+    padding: 40px 30px;
     margin-top: 20px;
+    justify-content: space-around;
 }
 
 .media {
@@ -82,11 +109,13 @@ img {
 }
 
 .count {
+    font-size: 1.4rem;
     font-weight: 700;
+    margin-bottom: .5rem;
 }
 
 .info {
     color: var(--dark-gray);
-    font-size: .65rem;
+    font-size: 1rem;
     letter-spacing: 1px;
 }
