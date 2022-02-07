@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --radius: 10px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Light-gray);
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    width: 20rem;
+    padding: 1.5rem;
+    background-color: var(--White);
+    border-radius: calc(var(--radius) * 2);
+    height: fit-content;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--Dark-blue);
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--Grayish-blue);
+}
