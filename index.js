@@ -64,10 +64,36 @@ let html = function ({ title, src, url } = {}) {
 
 let row = document.querySelector('.row');
 
-row.innerHTML = projects.map(project => {
-    let card = html(project);
-    console.log(card);
-    return card;
-}).join("")
+projects.forEach(project => {
+    let card = createTag('div', 'card');
 
+    let a = createTag('a');
+    a.href = project.url;
+
+    let img = createTag('img');
+    img.src = `./${project.src}/design/desktop-preview.jpg`;
+
+    a.append(img)
+
+    let cardBody = createTag('div', 'card-body');
+
+    let h5 = createTag('h5', 'mb-3 card-title');
+    h5.textContent = project.title;
+
+    let view = createTag('a');
+    view.href = project.url;
+    view.innerHTML = '<button class="btn btn-info">View</button>'
+    cardBody.append(h5, view)
+
+    card.append(a, cardBody);
+
+    row.append(card);
+});
+
+
+function createTag(tag, classList = '') {
+    let el = document.createElement(tag)
+    el.classList = classList;
+    return el;
+}
 
