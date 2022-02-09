@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --body-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --radius: 10px;
+    --gap: 1.8rem;
+}
+
+/* flex utils */
+
+.d-flex {
+    display: flex;
+}
+
+.fd-column {
+    flex-direction: column;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--body-bg);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    gap: var(--gap);
+    width: 28rem;
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: var(--radius);
+}
+
+img,
+span {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+}
+
+.equilibrium {
+    position: relative;
+}
+
+.equilibrium img {
+    display: block;
+    overflow: hidden;
+    border-radius: calc(var(--radius) / 2);
+}
+
+.overlay {
+    display: none;
+    background-color: var(--cyan);
+}
+
+.overlay img {
+    transform: scale(1.6);
+}
+
+.equilibrium:hover .overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+:is(h1, .founder span, .equilibrium):hover {
+    cursor: pointer;
+}
+
+:is(h1, .founder span) {
+    --color: var(--white);
+    color: var(--color);
+    transition: color 1.1s;
+}
+
+:is(h1, .founder span):hover {
+    color: var(--cyan);
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+p {
+    color: var(--soft-blue);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.coin {
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.coin img {
+    width: 1rem;
+}
+
+.coin>* {
+    gap: 10px;
+}
+
+.coin__price span {
+    color: var(--cyan);
+}
+
+.coin__time span {
+    color: var(--soft-blue);
+}
+
+.founder {
+    gap: 1rem;
+}
+
+.founder img {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid var(--line);
+}
