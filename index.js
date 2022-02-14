@@ -44,6 +44,11 @@ let projects = [
         src: "qr-code-component-main",
         url: "https://frontmentorchallenges.netlify.app/qr-code-component-main/index.html"
     },
+    {
+        title: "Huddle landing page",
+        src: "huddle-landing-page-with-single-introductory-section-master",
+        url: "https://frontmentorchallenges.netlify.app/huddle-landing-page-with-single-introductory-section-master/index.html"
+    },
 ]
 
 let html = function ({ title, src, url } = {}) {
