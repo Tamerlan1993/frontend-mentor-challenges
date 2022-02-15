@@ -39,12 +39,12 @@ body {
 }
 
 .logo {
-    width: 20rem;
+    width: 15rem;
 }
 
 main {
     display: flex;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .illustration {
@@ -63,12 +63,12 @@ main {
 
 h1 {
     font-family: var(--poppins);
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 p {
     font-family: var(--open-sans);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .register {
