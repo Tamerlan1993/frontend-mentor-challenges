@@ -108,13 +108,13 @@ footer {
     color: var(--white);
 }
 
-@media screen and (max-width:1800px) {
+@media screen and (max-width:1400px) {
     html {
         font-size: 15px;
     }
 }
 
-@media screen and (max-width:1700px) {
+@media screen and (max-width:1200px) {
     html {
         font-size: 16px;
     }
