@@ -49,6 +49,11 @@ let projects = [
         src: "huddle-landing-page-with-single-introductory-section-master",
         url: "https://frontmentorchallenges.netlify.app/huddle-landing-page-with-single-introductory-section-master/index.html"
     },
+    {
+        title: "Advice generator app",
+        src: "advice-generator-app-main",
+        url: "https://frontmentorchallenges.netlify.app/advice-generator-app-main/index.html"
+    },
 ]
 
 let html = function ({ title, src, url } = {}) {
