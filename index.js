@@ -54,6 +54,11 @@ let projects = [
         src: "advice-generator-app-main",
         url: "https://frontmentorchallenges.netlify.app/advice-generator-app-main/index.html"
     },
+    {
+        title: "Testimonials grid section",
+        src: "testimonials-grid-section",
+        url: "https://frontmentorchallenges.netlify.app/testimonials-grid-section/index.html"
+    },
 ]
 
 let html = function ({ title, src, url } = {}) {
