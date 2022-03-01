@@ -56,8 +56,8 @@ let projects = [
     },
     {
         title: "Testimonials grid section",
-        src: "testimonials-grid-section",
-        url: "https://frontmentorchallenges.netlify.app/testimonials-grid-section/index.html"
+        src: "testimonials-grid-section-main",
+        url: "https://frontmentorchallenges.netlify.app/testimonials-grid-section-main/index.html"
     },
 ]
 
