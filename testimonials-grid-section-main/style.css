@@ -29,6 +29,12 @@ body {
     height: 100%;
     font-family: var(--body-font);
     background-color: var(--light-grayish-blue);
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
 }
 
 main {
