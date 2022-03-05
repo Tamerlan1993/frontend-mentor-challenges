@@ -41,7 +41,7 @@ main {
 .content {
     display: grid;
     justify-content: space-evenly;
-    gap: 4rem;
+    gap: 2.5rem;
     padding: 4rem 10rem;
     background: url("./images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     background-repeat: no-repeat;
