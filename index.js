@@ -59,6 +59,11 @@ let projects = [
         src: "testimonials-grid-section-main",
         url: "https://frontmentorchallenges.netlify.app/testimonials-grid-section-main/index.html"
     },
+    {
+        title: "Base Apparel coming soon page",
+        src: "base-apparel-coming-soon-master",
+        url: "https://frontmentorchallenges.netlify.app/base-apparel-coming-soon-master/index.html"
+    },
 ]
 
 let html = function ({ title, src, url } = {}) {
