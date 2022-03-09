@@ -64,6 +64,11 @@ let projects = [
         src: "base-apparel-coming-soon-master",
         url: "https://frontmentorchallenges.netlify.app/base-apparel-coming-soon-master/index.html"
     },
+    {
+        title: "Ping coming soon page",
+        src: "ping-coming-soon-page-master",
+        url: "https://frontmentorchallenges.netlify.app/ping-coming-soon-page-master/index.html"
+    },
 ]
 
 let html = function ({ title, src, url } = {}) {
@@ -74,7 +79,7 @@ let html = function ({ title, src, url } = {}) {
         </a>
         <div class="card-body">
             <h5 class="mb-3 card-title">${title}</h5>
-            <a href="${url}">
+            <a href="${url}" target="_blank" rel="noopener noreferrer">
                 <button class="btn btn-info">View</button>
             </a>
         </div>
