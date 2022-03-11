@@ -69,6 +69,11 @@ let projects = [
         src: "ping-coming-soon-page-master",
         url: "https://frontmentorchallenges.netlify.app/ping-coming-soon-page-master/index.html"
     },
+    {
+        title: "Intro component with sign-up form",
+        src: "intro-component-with-signup-form-master",
+        url: "https://frontmentorchallenges.netlify.app/intro-component-with-signup-form-master/index.html"
+    },
 ]
 
 let html = function ({ title, src, url } = {}) {
