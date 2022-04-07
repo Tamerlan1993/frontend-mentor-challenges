@@ -1,5 +1,10 @@
 let projects = [
     {
+        title: "Article preview card component",
+        src: "article-preview-component-master",
+        url: "https://frontmentorchallenges.netlify.app/article-preview-component-master/index.html"
+    },
+    {
         title: "Stats preview card component",
         src: "stats-preview-card-component-main",
         url: "https://frontmentorchallenges.netlify.app/stats-preview-card-component-main/index.html"
