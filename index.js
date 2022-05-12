@@ -1,5 +1,11 @@
 let projects = [
     {
+        title: "REST Countries API with color theme switcher (React)",
+        src: "https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/wirxeocmd6tpnn9c5oqc.jpg",
+        url: "https://react-rest-countries-demo.netlify.app",
+        external: true
+    },
+    {
         title: "Article preview card component",
         src: "article-preview-component-master",
         url: "https://frontmentorchallenges.netlify.app/article-preview-component-master/index.html"
@@ -81,22 +87,6 @@ let projects = [
     },
 ]
 
-let html = function ({ title, src, url } = {}) {
-    return `
-    <div class="card">
-        <a href="${url}">
-            <img src="./${src}/design/desktop-design.jgp" alt="${title}">
-        </a>
-        <div class="card-body">
-            <h5 class="mb-3 card-title">${title}</h5>
-            <a href="${url}" target="_blank" rel="noopener noreferrer">
-                <button class="btn btn-info">View</button>
-            </a>
-        </div>
-    </div>
-            `
-}
-
 let row = document.querySelector('.row');
 
 projects.forEach(project => {
@@ -106,7 +96,7 @@ projects.forEach(project => {
     a.href = project.url;
 
     let img = createTag('img');
-    img.src = `./${project.src}/design/desktop-preview.jpg`;
+    img.src = project.external ? project.src : `./${project.src}/design/desktop-preview.jpg`;
 
     a.append(img)
 
