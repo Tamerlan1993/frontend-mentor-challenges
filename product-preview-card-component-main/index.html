@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body class="flex h-screen w-screen text-[14px] bg-cream">
+    <div
+      class="min-w-[360px] max-w-[360px] h-[700px] md:max-w-[610px] md:h-[480px] grid grid-cols-1 md:grid-cols-2 m-auto rounded-lg overflow-hidden"
+    >
+      <img
+        class="object-fit h-full flex-1 hidden md:block"
+        src="./images/image-product-desktop.jpg"
+        alt="image"
+      />
+      <img
+        class="object-cover h-full flex-1 md:hidden block"
+        src="./images/image-product-mobile.jpg"
+        alt="image"
+      />
+      <div class="bg-white items-start px-8 py-6 flex flex-col justify-between">
+        <p
+          class="text-darkGrayishBlue tracking-[5px] uppercase font-Montserrat"
+        >
+          Perfume
+        </p>
+        <h1 class="text-4xl font-bold font-Fraunces">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <h3 class="text-darkGrayishBlue font-medium font-Montserrat">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </h3>
+        <p class="text-darkCyan flex gap-4 items-center">
+          <span class="text-3xl font-bold font-Fraunces">$149.99 </span>
+          <span class="text-xs line-through font-Montserrat"> $169.99 </span>
+        </p>
+        <button
+          class="font-Montserrat w-full h-[48px] rounded-lg font-bold bg-darkCyan text-white flex gap-3 items-center justify-center"
+        >
+          <img src="./images/icon-cart.svg" alt="cart" />
+          <span> Add to Cart </span>
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
