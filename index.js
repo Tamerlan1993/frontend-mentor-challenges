@@ -6,6 +6,11 @@ let projects = [
         external: true
     },
     {
+        title: "Product preview card component",
+        src: "product-preview-card-component-main",
+        url: "https://frontmentorchallenges.netlify.app/product-preview-card-component-main/index.html"
+    },
+    {
         title: "Article preview card component",
         src: "article-preview-component-master",
         url: "https://frontmentorchallenges.netlify.app/article-preview-component-master/index.html"
