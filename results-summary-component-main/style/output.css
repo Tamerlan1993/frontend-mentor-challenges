@@ -789,11 +789,13 @@ video {
   container-type: inline-size;
 }
 
-@container (min-width: 721px) {
-  .\@\[721px\]\:block {
-    display: block;
+@container (min-width: 600px) {
+  .\@\[600px\]\:flex {
+    display: flex;
   }
+}
 
+@container (min-width: 721px) {
   .\@\[721px\]\:flex {
     display: flex;
   }
