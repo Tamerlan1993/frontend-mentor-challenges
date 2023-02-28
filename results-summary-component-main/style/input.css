@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .score {
+    @apply flex justify-between p-3 rounded-lg;
+  }
+}
