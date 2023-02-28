@@ -90,6 +90,11 @@ let projects = [
         src: "intro-component-with-signup-form-master",
         url: "https://frontmentorchallenges.netlify.app/intro-component-with-signup-form-master/index.html"
     },
+    {
+        title: "Results summary component",
+        src: "results-summary-component-main",
+        url: "https://frontmentorchallenges.netlify.app/results-summary-component-main/index.html"
+    },
 ]
 
 let row = document.querySelector('.row');
