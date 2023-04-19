@@ -114,18 +114,15 @@ projects.forEach(project => {
     img.src = project.external ? project.src : `./${project.src}/design/desktop-preview.jpg`;
 
     a.append(img)
+    a.setAttribute('target', '_blank')
 
     let cardBody = createTag('div', 'card-body');
 
     let h5 = createTag('h5', 'mb-3 card-title');
     h5.textContent = project.title;
 
-    let view = createTag('a');
-    view.href = project.url;
-    view.innerHTML = '<button class="btn btn-info">View</button>'
-    cardBody.append(h5, view)
-
-    card.append(a, cardBody);
+    cardBody.append(a);
+    card.append(cardBody);
 
     row.append(card);
 });
