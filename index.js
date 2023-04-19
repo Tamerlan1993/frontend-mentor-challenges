@@ -95,6 +95,11 @@ let projects = [
         src: "results-summary-component-main",
         url: "https://frontmentorchallenges.netlify.app/results-summary-component-main/index.html"
     },
+    {
+        title: "Interactive rating component",
+        src: "interactive-rating-component-main",
+        url: "https://frontmentorchallenges.netlify.app/interactive-rating-component-main/index.html"
+    },
 ]
 
 let row = document.querySelector('.row');

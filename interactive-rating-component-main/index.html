@@ -12,6 +12,13 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Interactive rating component</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,6 +38,9 @@
               veryDarkBlue: "hsl(216, 12%, 8%)",
               orange: "hsl(25, 97%, 53%)",
             },
+            fontFamily: {
+              overpass: ["Overpass", "sans-serif"],
+            },
           },
         },
       };
@@ -39,29 +49,27 @@
     <style type="text/tailwindcss">
       @layer components {
         .rating {
-          @apply rounded-3xl cursor-pointer hover:bg-lightGrey bg-mediumGrey flex justify-center items-center py-2 px-4;
+          @apply rounded-full transition-colors duration-300 ease-in text-lightGrey hover:text-white border border-transparent cursor-pointer hover:bg-lightGrey bg-darkBlue flex justify-center items-center w-[1.6rem] h-[1.6rem] p-[1.6rem];
         }
         .rating.active {
-          @apply bg-orange;
+          @apply bg-orange text-white;
         }
       }
     </style>
-
-    <link rel="stylesheet" href="main.css" />
   </head>
-  <body class="h-full bg-veryDarkBlue">
+  <body class="h-full bg-black grid font-overpass text-[15px]">
     <!-- Rating state start -->
 
-    <div id="app" class="flex justify-center items-center h-full">
-      <div class="wrapper w-80 rounded-3xl shadow bg-darkBlue text-white p-8">
-        <div class="nonsubmitted">
+    <div id="app" class="m-auto w-1/2 h-1/2">
+      <div class="wrapper rounded-3xl shadow bg-veryDarkBlue text-white p-8">
+        <div class="notsubmitted grid gap-8">
           <img
             src="./images/icon-star.svg"
             alt="star"
-            class="rounded-3xl bg-slate-700 p-4"
+            class="rounded-3xl bg-darkBlue p-4"
           />
-          <h1 class="heading font-bold text-lg">How did we do?</h1>
-          <p class="text-gray-400 text-xs">
+          <h1 class="heading text-3xl">How did we do?</h1>
+          <p class="text-gray-400 leading-6">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
@@ -72,15 +80,19 @@
             <div class="rating">4</div>
             <div class="rating">5</div>
           </div>
-          <button class="block w-full bg-orange p-2 uppercase rounded-3xl">
+          <button
+            class="block w-full bg-orange hover:bg-white hover:text-orange p-4 uppercase rounded-full tracking-widest"
+          >
             Submit
           </button>
         </div>
-        <div class="submitted">
+        <div class="submitted hidden gap-8 justify-items-center">
           <img src="./images/illustration-thank-you.svg" alt="" />
-          <p>You selected 3 of 5</p>
-          <p>Thank you</p>
-          <p>
+          <p
+            class="selectedRating text-orange rounded-3xl bg-darkBlue py-1 px-3"
+          ></p>
+          <p class="text-3xl">Thank you!</p>
+          <p class="text-mediumGrey text-center">
             We appreciate you taking the time to give a rating. If you ever need
             more support, don't hesitate to get in touch.
           </p>
