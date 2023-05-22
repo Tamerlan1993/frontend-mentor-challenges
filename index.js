@@ -100,6 +100,11 @@ let projects = [
         src: "interactive-rating-component-main",
         url: "https://frontmentorchallenges.netlify.app/interactive-rating-component-main/index.html"
     },
+    {
+        title: "FAQ accordion card",
+        src: "faq-accordion-card-main",
+        url: "https://frontmentorchallenges.netlify.app/faq-accordion-card-main/index.html"
+    },
 ]
 
 let row = document.querySelector('.row');

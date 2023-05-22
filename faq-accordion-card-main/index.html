@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "soft-red": "hsl(14, 88%, 65%)",
+              "dark-desaturated-blue": "hsl(238, 29%, 16%)",
+              "soft-violet": "hsl(273, 75%, 66%)",
+              "soft-blue": "hsl(240, 73%, 65%)",
+              "very-dark-grayish-blue": "hsl(237, 12%, 33%)",
+              "dark-grayish-blue": "hsl(240, 6%, 50%)",
+              "light-grayish-blue": "hsl(240, 5%, 91%)",
+            },
+            fontFamily: {
+              kumbh: "Kumbh Sans, sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body
+    class="flex items-center justify-center min-h-screen w-full px-6 pt-12 font-kumbh bg-gradient-to-b from-soft-violet to-soft-blue bg-no-repeat"
+  >
+    <main
+      class="max-w-[840px] w-full grid grid-cols-1 md:grid-cols-2 items-center px-10 pb-12 bg-white rounded-3xl"
+    >
+      <div class="relative mobile block md:hidden">
+        <img
+          src="./images/illustration-woman-online-mobile.svg"
+          alt="illustration-woman-online-mobile"
+          class="absolute w-[320px] top-0 left-[55%] translate-x-[-60%] translate-y-[-60%]"
+        />
+        <img
+          src="./images/bg-pattern-mobile.svg"
+          alt="bg-pattern-mobile"
+          class="absolute w-[320px] top-0 left-[55%] translate-x-[-60%] translate-y-[0%]"
+        />
+      </div>
+      <div class="relative desktop hidden md:block">
+        <img
+          src="./images/bg-pattern-desktop.svg"
+          alt="bg-pattern-desktop"
+          class="absolute left-0 left-0 translate-x-[-20%] translate-y-[-40%]"
+        />
+        <img
+          src="./images/illustration-box-desktop.svg"
+          alt="illustration-box-desktop"
+          class="absolute w-[90px] left-0 translate-x-[-80%] translate-y-[20%] z-40"
+        />
+        <img
+          src="./images/illustration-woman-online-desktop.svg"
+          alt="illustration-woman-online-desktop"
+          class="absolute w-[450px] left-0 translate-x-[-24%] translate-y-[-40%]"
+        />
+      </div>
+      <div class="content p-4 mt-40 md:mt-12">
+        <h1 class="text-2xl font-bold mb-4 text-center md:text-left">FAQ</h1>
+        <details class="border-b border-light-grayish-blue py-3">
+          <summary
+            class="hover:text-soft-red flex justify-between items-center"
+          >
+            How many team members can I invite?
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </summary>
+          <p class="py-3 pr-2 text-dark-grayish-blue font-normal">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </details>
+        <details class="border-b border-light-grayish-blue py-3">
+          <summary
+            class="hover:text-soft-red flex justify-between items-center"
+          >
+            What is the maximum file upload size?
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </summary>
+          <p class="py-3 pr-2 text-dark-grayish-blue font-normal">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </details>
+        <details class="border-b border-light-grayish-blue py-3">
+          <summary
+            class="hover:text-soft-red flex justify-between items-center"
+          >
+            How do I reset my password?
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </summary>
+          <p class="py-3 pr-2 text-dark-grayish-blue font-normal">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </details>
+        <details class="border-b border-light-grayish-blue py-3">
+          <summary
+            class="hover:text-soft-red flex justify-between items-center"
+          >
+            Can I cancel my subscription?
+            <img src="./images/icon-arrow-down.svg" alt="" />
+          </summary>
+          <p class="py-3 pr-2 text-dark-grayish-blue font-normal">
+            Yes! Send us a message and we’ll process your request no questions
+            asked. Do you provide additional support? Chat and email support is
+            available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </details>
+      </div>
+    </main>
+  </body>
+</html>

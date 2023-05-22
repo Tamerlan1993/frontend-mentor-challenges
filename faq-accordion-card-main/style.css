@@ -1,0 +1,24 @@
+details[open] summary {
+  font-weight: 700;
+}
+
+details[open] summary img {
+  transform: rotate(180deg);
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details[open] summary ~ * {
+  animation: slomo 0.5s ease-in-out;
+}
+@keyframes slomo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
