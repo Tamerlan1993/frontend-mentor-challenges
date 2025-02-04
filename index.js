@@ -134,6 +134,7 @@ projects.forEach((project) => {
   let h5 = createTag('h5', 'mb-3 card-title');
   h5.textContent = project.title;
 
+  cardBody.append(h5);
   cardBody.append(a);
   card.append(cardBody);
 
