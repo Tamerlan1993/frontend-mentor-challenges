@@ -17,6 +17,11 @@ let projects = [
     url: 'https://frontmentorchallenges.netlify.app/product-preview-card-component-main/index.html',
   },
   {
+    title: 'Social links profile',
+    src: 'social-links-profile-main',
+    url: 'https://frontmentorchallenges.netlify.app/social-links-profile-main/index.html',
+  },
+  {
     title: 'Article preview card component',
     src: 'article-preview-component-master',
     url: 'https://frontmentorchallenges.netlify.app/article-preview-component-master/index.html',
