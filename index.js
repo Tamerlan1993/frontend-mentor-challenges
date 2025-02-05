@@ -23,7 +23,8 @@ let projects = [
   },
   {
     title: 'Recipe page',
-    src: 'recipe-page-main',
+    external: true,
+    src: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sogk9gtrzrmsf2rzcj63.jpg',
     url: 'https://frontmentorchallenges.netlify.app/recipe-page-main/index.html',
   },
   {
