@@ -22,6 +22,11 @@ let projects = [
     url: 'https://frontmentorchallenges.netlify.app/social-links-profile-main/index.html',
   },
   {
+    title: 'Recipe page',
+    src: 'recipe-page-main',
+    url: 'https://frontmentorchallenges.netlify.app/recipe-page-main/index.html',
+  },
+  {
     title: 'Article preview card component',
     src: 'article-preview-component-master',
     url: 'https://frontmentorchallenges.netlify.app/article-preview-component-master/index.html',

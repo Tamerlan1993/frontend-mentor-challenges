@@ -1,0 +1,134 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(24, 5%, 18%);
+  line-height: 1.5;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 736px;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.description {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 2rem;
+}
+
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.preparation-time h2 {
+  color: hsl(332, 51%, 32%);
+  font-family: 'Young Serif', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.time-details {
+  color: hsl(30, 10%, 34%);
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+  color: hsl(30, 10%, 34%);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.nutrition {
+  background-color: hsl(0, 0%, 98%);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.nutrition-grid {
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nutrition-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-value {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.nutrition-label {
+  color: hsl(30, 10%, 34%);
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
