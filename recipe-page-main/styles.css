@@ -51,7 +51,7 @@ h1 {
 
 .preparation-time h2 {
   color: hsl(332, 51%, 32%);
-  font-family: 'Young Serif', serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -113,7 +113,6 @@ li {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
   .container {
     padding: 1.5rem;
   }
