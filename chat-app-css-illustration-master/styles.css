@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f3f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* Hidden by default on desktop */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 35vw;
+    height: 85vh;
+    background: linear-gradient(45deg, #8838ff 0%, #e942ff 100%);
+    border-radius: 0 0 250px 250px;
+    top: 0;
+    left: -50px;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.phone-container {
+    background: white;
+    border-radius: 30px;
+    padding: 10px;
+    max-width: 350px;
+    width: 100%;
+    height: 600px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.phone-notch {
+    background: white;
+    height: 20px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 15px 15px;
+}
+
+.chat-header {
+    background: linear-gradient(90deg, #8838ff, #e942ff);
+    border-radius: 20px 20px 5px 5px;
+    padding: 25px 15px 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url('./images/avatar.jpg') center center/cover;
+}
+
+.chat-content {
+    background: #f5f3f7;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    flex: 1;
+}
+
+.message {
+    margin-bottom: 8px;
+    max-width: 70%;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.received {
+    background: #e9e4ed;
+    color: #9241c8;
+}
+
+.sent {
+    background: white;
+    margin-left: auto;
+    color: #6e6c6f;
+}
+
+.image-group {
+    display: flex;
+    gap: 6px;
+    justify-content: flex-end;
+    margin: 8px 0;
+}
+
+.image-group img {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+}
+
+.pricing-option {
+    background: linear-gradient(90deg, #8838ff, #e942ff);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.pricing-option .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.input-box {
+    background: white;
+    border-radius: 20px;
+    padding: 12px 8px 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.input-placeholder {
+    color: #c6cacd;
+}
+
+.submit-button {
+    background: #3e2753;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.submit-button::after {
+    content: '›';
+    color: white;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.content-section {
+    max-width: 400px;
+}
+
+.content-section h1 {
+    color: #3e2753;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    color: #a39daa;
+    line-height: 1.6;
+}
+
+.chat-header h3 {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.chat-header small {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.message.received {
+    background: #ede5f4;
+    color: #9241c8;
+}
+
+.message.sent {
+    background: white;
+    color: #6e6c6f;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+        padding: 40px 20px;
+    }
+
+    body::before {
+        width: 100vw;
+        height: 95vh;
+        left: -56%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .phone-container {
+        width: 280px;
+        height: 650px; /* Increased height on mobile */
+    }
+
+    .content-section {
+        text-align: center;
+        padding: 20px;
+        max-width: 300px;
+    }
+
+    .content-section h1 {
+        font-size: 28px;
+    }
+}
+
+/* Add additional breakpoint for even smaller devices */
+@media (max-width: 375px) {
+    .phone-container {
+        height: 700px; /* Further increase height for smaller devices */
+    }
+} 

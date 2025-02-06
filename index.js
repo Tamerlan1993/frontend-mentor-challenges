@@ -28,6 +28,11 @@ let projects = [
     url: 'https://frontmentorchallenges.netlify.app/recipe-page-main/index.html',
   },
   {
+    title: 'Chat app CSS illustration',
+    src: 'chat-app-css-illustration-master',
+    url: 'https://frontmentorchallenges.netlify.app/chat-app-css-illustration-master/index.html',
+  },
+  {
     title: 'Blog Preview Card',
     src: 'blog-preview-card-main',
     url: 'https://frontmentorchallenges.netlify.app/blog-preview-card-main/index.html',
