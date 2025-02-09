@@ -33,6 +33,11 @@ let projects = [
     url: 'https://frontmentorchallenges.netlify.app/chat-app-css-illustration-master/index.html',
   },
   {
+    title: 'Clipboard landing page',
+    src: 'clipboard-landing-page-master',
+    url: 'https://frontmentorchallenges.netlify.app/clipboard-landing-page-master/index.html',
+  },
+  {
     title: 'Blog Preview Card',
     src: 'blog-preview-card-main',
     url: 'https://frontmentorchallenges.netlify.app/blog-preview-card-main/index.html',
