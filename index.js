@@ -17,6 +17,11 @@ let projects = [
     url: 'https://frontmentorchallenges.netlify.app/product-preview-card-component-main/index.html',
   },
   {
+    title: 'Huddle landing page with alternating feature blocks',
+    src: 'huddle-landing-page-with-alternating-feature-blocks-master',
+    url: 'https://frontmentorchallenges.netlify.app/huddle-landing-page-with-alternating-feature-blocks-master/index.html',
+  },
+  {
     title: 'Social links profile',
     src: 'social-links-profile-main',
     url: 'https://frontmentorchallenges.netlify.app/social-links-profile-main/index.html',
