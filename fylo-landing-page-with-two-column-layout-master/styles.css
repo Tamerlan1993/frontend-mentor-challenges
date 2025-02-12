@@ -335,21 +335,42 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
-    border: 1px solid white;
-    border-radius: 50%;
+    width:24px;
+    height:24px;
+    color: white;
     transition: all 0.3s ease;
 }
 
-.social-icon:hover {
-    border-color: var(--bright-blue);
+.social-icon svg {
+    width:24px;
+    height:24px;
 }
 
-.social-icon img {
-    width: 16px;
-    height: 16px;
-    filter: brightness(0) invert(1);
+.social-icon circle {
+    stroke-width: 1px;
+}
+
+.social-icon path {
+    transform: scale(0.8);
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.social-icon:hover {
+    color: var(--bright-blue);
+}
+
+.social-icon:hover circle {
+    stroke: var(--bright-blue);
+}
+
+.social-icon:hover path {
+    fill: var(--bright-blue);
+}
+
+.social-icon svg path,
+.social-icon svg circle {
+    transition: all 0.3s ease;
 }
 
 /* Responsive Design */
