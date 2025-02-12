@@ -12,6 +12,11 @@ let projects = [
     external: true,
   },
   {
+    title: 'Fylo landing page with two column layout',
+    src: 'fylo-landing-page-with-two-column-layout-master',
+    url: 'https://frontmentorchallenges.netlify.app/fylo-landing-page-with-two-column-layout-master/index.html',
+  },
+  {
     title: 'Product preview card component',
     src: 'product-preview-card-component-main',
     url: 'https://frontmentorchallenges.netlify.app/product-preview-card-component-main/index.html',
