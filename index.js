@@ -17,6 +17,11 @@ let projects = [
     url: 'https://frontmentorchallenges.netlify.app/fylo-landing-page-with-two-column-layout-master/index.html',
   },
   {
+    title: 'Huddle landing page with curved sections',
+    src: 'huddle-landing-page-with-curved-sections-master',
+    url: 'https://frontmentorchallenges.netlify.app/huddle-landing-page-with-curved-sections-master/index.html',
+  },
+  {
     title: 'Product preview card component',
     src: 'product-preview-card-component-main',
     url: 'https://frontmentorchallenges.netlify.app/product-preview-card-component-main/index.html',
