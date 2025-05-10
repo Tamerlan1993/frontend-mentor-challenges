@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Karla-Italic;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/Karla-Italic-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: Karla-Variable;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Karla-Bold;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/static/Karla-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Karla-Regular;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/static/Karla-Regular.ttf') format('truetype');
+}
+
+@import 'tailwindcss';
+
+@theme {
+  --color-green-lighter: hsl(148, 38%, 91%);
+  --color-green-medium: hsl(169, 82%, 27%);
+  --color-red: hsl(0, 66%, 54%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-medium: hsl(186, 15%, 59%);
+  --color-grey-darker: hsl(187, 24%, 22%);
+
+  --font-karla-italic: 'Karla-Italic';
+  --font-karla-variable: 'Karla-Variable';
+  --font-karla-bold: 'Karla-Bold';
+  --font-karla-regular: 'Karla-Regular';
+}
