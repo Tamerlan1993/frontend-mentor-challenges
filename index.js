@@ -22,11 +22,6 @@ let projects = [
     url: 'https://frontmentorchallenges.netlify.app/huddle-landing-page-with-curved-sections-master/index.html',
   },
   {
-    title: 'Bento grid',
-    src: 'bento-grid-main',
-    url: 'https://frontmentorchallenges.netlify.app/bento-grid-main/index.html',
-  },
-  {
     title: 'Product preview card component',
     src: 'product-preview-card-component-main',
     url: 'https://frontmentorchallenges.netlify.app/product-preview-card-component-main/index.html',
