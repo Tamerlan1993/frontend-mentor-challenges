@@ -152,6 +152,11 @@ let projects = [
     src: 'faq-accordion-card-main',
     url: 'https://frontmentorchallenges.netlify.app/faq-accordion-card-main/index.html',
   },
+  {
+    title: 'Digital bank landing page',
+    src: 'digital-bank-landing-page-master',
+    url: 'https://frontmentorchallenges.netlify.app/digital-bank-landing-page-master/index.html',
+  },
 ];
 
 let row = document.querySelector('.row');
